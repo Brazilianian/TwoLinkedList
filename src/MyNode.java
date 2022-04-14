@@ -3,9 +3,6 @@ public class MyNode<T> {
     private MyNode<T> prev;
     private T item;
 
-    public MyNode() {
-    }
-
     public MyNode(MyNode<T> prev, T item, MyNode<T> next) {
         this.prev = prev;
         this.item = item;
