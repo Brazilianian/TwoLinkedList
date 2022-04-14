@@ -12,8 +12,8 @@ public class Main {
         myLinkedList.setFirst(1);
         myLinkedList.setFirst(0);
 
-//        myLinkedList.deleteFirst();
-//        myLinkedList.deleteLast();
+        myLinkedList.deleteFirst();
+        myLinkedList.deleteLast();
 
         myLinkedList.print();
     }

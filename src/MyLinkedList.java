@@ -5,10 +5,6 @@ public class MyLinkedList<T> {
     private MyNode<T> first;
     private MyNode<T> last;
 
-    public MyLinkedList() {
-        first = null;
-    }
-
     public void setFirst(T item) {
         MyNode<T> newNode = new MyNode<>(null, item, first);
         if (first == null) {
