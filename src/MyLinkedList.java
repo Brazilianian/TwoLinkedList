@@ -11,23 +11,24 @@ public class MyLinkedList<T> {
 
     public void setFirst(T item) {
         MyNode<T> newNode = new MyNode<>(null, item, first);
-        MyNode<T> temp = first;
-        first = newNode;
-        if (temp == null) {
+        if (first == null) {
+            first = newNode;
             last = first;
         } else {
-            temp.setPrev(first);
+            first.setPrev(first);
+            first = newNode;
         }
     }
 
     public void setLast(T item) {
         MyNode<T> newNode = new MyNode<>(last, item, null);
-        MyNode<T> temp = last;
-        last = newNode;
-        if (temp == null) {
+        if (last == null) {
+            last = newNode;
             first = last;
         } else {
-            temp.setNext(newNode);
+            last.setNext(newNode);
+
+            last = newNode;
         }
     }
 
